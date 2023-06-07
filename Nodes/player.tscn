@@ -23,6 +23,7 @@ shadow_enabled = true
 texture = ExtResource("3_m1qgo")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.9, 0.9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_1c122")

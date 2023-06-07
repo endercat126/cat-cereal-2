@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ejc0bhvlemmf"]
+[gd_scene load_steps=7 format=3 uid="uid://ejc0bhvlemmf"]
 
 [ext_resource type="Texture2D" uid="uid://db6kbbin2ov8i" path="res://Backgrounds/Blue Nebula/Blue Nebula 2 - 1024x1024.png" id="1_cr4lv"]
 [ext_resource type="PackedScene" uid="uid://dl5iipyl0jqka" path="res://Nodes/player.tscn" id="2_360ri"]
 [ext_resource type="PackedScene" uid="uid://dlq8cqorpijhg" path="res://Nodes/cat_cereal.tscn" id="3_00te1"]
+[ext_resource type="Script" path="res://FoodSpawner.gd" id="3_3vq1m"]
 [ext_resource type="Script" path="res://Label.gd" id="4_s6bbj"]
 
 [sub_resource type="Environment" id="Environment_6wldj"]
@@ -28,27 +29,13 @@ region_rect = Rect2(0, 0, 4096, 4096)
 [node name="Player" parent="." instance=ExtResource("2_360ri")]
 
 [node name="Food" type="Node2D" parent="."]
+script = ExtResource("3_3vq1m")
+food_types = Array[PackedScene]([ExtResource("3_00te1")])
 
-[node name="CatCereal" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(301, -37)
-
-[node name="CatCereal2" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(504, 23)
-
-[node name="CatCereal3" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(504, -209)
-
-[node name="CatCereal4" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(89, -283)
-
-[node name="CatCereal5" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(-419, -147)
-
-[node name="CatCereal6" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(-319, 222)
-
-[node name="CatCereal7" parent="Food" instance=ExtResource("3_00te1")]
-position = Vector2(292, 311)
+[node name="FoodTimer" type="Timer" parent="Food"]
+wait_time = 0.01
+one_shot = true
+autostart = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_6wldj")
