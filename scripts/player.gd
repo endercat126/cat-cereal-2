@@ -40,7 +40,8 @@ func _physics_process(delta) -> void:
 			if self in food.get_overlapping_bodies():
 				print("Ate")
 				
-				Global.food_eaten += food.food_value
+				Global.food_eaten += 2 # ILL REPLACE THIS MAGIC NUMBER LATER OKAYYYYYY
+				
 				foods.erase(food)
 				
 				food.queue_free()

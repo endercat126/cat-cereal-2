@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dlq8cqorpijhg"]
+[gd_scene load_steps=7 format=3 uid="uid://dlq8cqorpijhg"]
 
 [ext_resource type="Texture2D" uid="uid://brxub0tns2c4o" path="res://sprites/food/cereal.png" id="1_clg50"]
-[ext_resource type="Script" path="res://scripts/food.gd" id="1_cmd58"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xjxde"]
 radius = 30.3645
@@ -63,7 +62,6 @@ _data = {
 }
 
 [node name="CatCereal" type="Area2D" groups=["Food"]]
-script = ExtResource("1_cmd58")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
