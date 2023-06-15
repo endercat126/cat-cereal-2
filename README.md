@@ -6,6 +6,12 @@
 
 Embark on an epic interstellar quest as the beloved feline hero, Endercat, faces a cosmic catastrophe! Prepare for an adrenaline-pumping adventure through the vast expanse of space, where disaster strikes as Endercat's precious cat cereal spills into the void. With time running out, join Endercat on an exhilarating race against the clock to retrieve every last bite before the conniving King Ratty of Rat Land seizes the opportunity to snatch it away. Jump into action, dodge perilous lasers, and channel your inner feline prowess to save the day! Will you be swift enough to outwit the mischievous King Ratty and ensure that Endercat's hunger is satisfied? The fate of the galaxy's tastiest treat rests in your hands!
 
+- ⚡ Blazingly Fast
+- 🔪 Cutting Edge
+- 🤯 Gamechanging
+- 🌱 Holistic Approach
+- 🦄 Magical
+
 ## Download
 - [Linux (v0.0.1-alpha)](https://github.com/endercat126/cat-cereal-2/releases/download/v0.0.1-alpha/cat-cereal-2_linux_v0.0.1-alpha.x86_64)
 - [Windows (v0.0.1-alpha)](https://github.com/endercat126/cat-cereal-2/releases/download/v0.0.1-alpha/cat-cereal-2_win_v0.0.1-alpha.exe)
